@@ -5,7 +5,7 @@ import ProfilePageContainer from './pages/profile/ProfilePageContainer'
 
 export default (
   	<Switch>
-    	<Route path="/home" component={ProfilePageContainer} />
-    	<Redirect from="*" to="home" />
+    	<Route path="/profile" component={ProfilePageContainer} />
+    	<Redirect from="*" to="profile" />
   	</Switch>
 )
