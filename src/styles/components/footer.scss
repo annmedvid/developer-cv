@@ -1,0 +1,48 @@
+@import './variables';
+
+.profile-footer {
+	height: 175px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+
+	background-color: $mine-shaft;
+
+	.footer-address {
+		margin-left: 190px;
+
+		a {
+			display: flex;
+			font-size: 15px;
+			font-style: normal;
+			text-decoration: none;
+			color: white;
+
+			span:first-of-type {
+				width: 60px;
+
+				&:after {
+					content: ':';
+				}
+			}
+
+			span:last-of-type {
+				font-family: $page-family;
+			}
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 46px; 
+		width: 70px;
+		position: absolute;
+		top: 60px;
+		right: 200px;
+		background-image: url("../assets/logo.svg");
+		background-size: cover;
+	}
+}

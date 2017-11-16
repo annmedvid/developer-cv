@@ -1,0 +1,74 @@
+@import './variables';
+
+.profile-contact {
+	padding-bottom: 80px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: relative;
+
+	.contact-title {
+		width: 100%;
+		margin-top: 15px;
+		font-size: 30px;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.contact-list {
+		width: 150px;
+		margin: 40px 120px 0 40px;
+
+		.phone-title, .email-title, .skype-title {
+			font-size: 16px;
+
+			&:after {
+				content: ':';
+			}
+		}
+
+		.phone, .email, .skype {
+			padding: 5px 0 25px;
+			color: $dusty-gray;
+		}
+	}
+
+	.contact-request {
+		width: 440px;
+		margin-top: 40px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		input[id="name"], input[id="email"], textarea[id="message"] {
+			width: 100%;
+			height: 30px;
+			padding: 5px;
+			margin-bottom: 20px;
+			border: 1px solid $dusty-gray;
+			border-top: 1px solid $mine-shaft;
+		}
+
+		textarea[id="message"] {
+			height: auto;
+			margin-bottom: 30px;
+			resize: none;
+		}
+
+		button[type="submit"] {
+			height: 30px;
+			width: 165px;
+			text-transform: uppercase;
+			color: white;
+			background-color: $mine-shaft;
+		}
+	}
+
+	.contact-message {
+		position: absolute;
+		bottom: 50px;
+		right: 320px;
+	}
+}

@@ -8,6 +8,7 @@ import createSagaMiddleware from 'redux-saga'
 import rootReducer from './rootReducer'
 import rootSaga from './sagas'
 import routes from './routes'
+import './styles/main.scss'
 
 const sagaMiddleware = createSagaMiddleware()
 

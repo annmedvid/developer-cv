@@ -1,0 +1,58 @@
+@import './variables';
+
+.profile-about {
+	padding-bottom: 65px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+	border-bottom: 1px solid $dusty-gray;
+
+	.about-title {
+		width: 100%;
+		margin-top: 45px;
+
+		font-size: 30px;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.about-sub-title {
+		font-size: 22px;
+		font-weight: 900;
+		font-style: italic;
+		letter-spacing: 3px;
+	}
+
+	.about-text {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: 1px;
+	}
+
+	.about-goals, .about-dreams {
+		width: 300px;
+		padding-top: 20px;	
+	}
+
+	.about-goals {
+		padding-right: 200px;
+		text-align: right;
+		position: relative;
+
+		&:after {
+			content: '';
+			display: block;
+			height: 165px;
+			width: 174px;
+			position: absolute;
+			top: 70px;
+			left: 310px;
+			background-image: url("../assets/avatar.svg");
+			background-size: cover;
+		}
+	}
+}
